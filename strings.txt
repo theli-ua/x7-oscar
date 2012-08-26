@@ -1,0 +1,189 @@
+keydown 267 1
+keydown 43 1
+keyup 43 1
+MacroEnding
+keyup 267 1
+keydown 264 1
+keydown 265 1
+keydown 266 1
+keydown 267 1
+MacroEnding
+keyup 267 1
+keyup 266 1
+keyup 265 1
+keyup 264 1
+MacroEnding
+Set MacroRepeat
+goto
+fakeaddr
+goto 
+goto 
+goto
+fakeaddr
+goto 
+goto 
+rightwheeldown
+rightwheelup
+swingr 1
+leftwheeldown
+leftwheelup
+swingl 1
+Goto 0
+Stop
+Goto 1
+Stop
+Stop
+Mode 1
+Mode 0
+HID_EE_Write16 
+HID_EE_Write16 
+HID_EE_Write16 
+HID_EE_Write16 
+HID_EE_Write16 
+HID_EE_Write16 
+ FFFF
+HID_EE_Write16 0000 
+ //Checksum
+HID_EE_Write16 0001 FFFF //Unused
+HID_EE_Write16 0002 FFFF //Reserve for LaserPower
+HID_EE_Write16 0003 A4A4 //VerifyCode ReportRate[7:0](ms)
+HID_EE_Write16 0004 
+ //DPI_Index(zero base)
+HID_EE_Write16 0005 0000
+HID_EE_Write16 0005 
+HID_EE_Write16 0006 
+HID_EE_Write16 0007 
+ //ReportRate(ms)
+HID_EE_Write16 0008 0017 //Button Style Addr
+HID_EE_Write16 0009 0021 //Wheel Style Addr
+HID_EE_Write16 000A 
+ //ScrollCapsNumStyle ScrollUpStyle(0 AvailableAtMode0[14:12] 0 Scroll Caps Num) ScrollDnStyle(0 AvailableAtMode0[6:4] 0 Scroll Caps Num) bit=1(MacroKey)
+HID_EE_Write16 000B 0050 //Button Event Addr
+HID_EE_Write16 000C 0026 //WheelX Event Addr
+HID_EE_Write16 000D 0030 //WheelY Event Addr
+HID_EE_Write16 000E FFFF //Reserve WheelZ Event Addr
+HID_EE_Write16 000F FFFF //Unused
+HID_EE_Write16 0010 
+ //Num Lock Light
+HID_EE_Write16 0011 
+ //Num Lock Dark
+HID_EE_Write16 0012 
+ //Caps Lock Light
+HID_EE_Write16 0013 
+ //Caps Lock Dark
+HID_EE_Write16 0014 
+ //Scroll Lock Light
+HID_EE_Write16 0015 
+ //Scroll Lock Dark
+HID_EE_Write16 0016 0040 //DPI Addr
+HID_EE_Write16 0017 
+ //Mode0 KeyDnStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 0018 
+ //Mode0 KeyUpStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 0019 
+ //Mode0 KeyDnStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001A 
+ //Mode0 KeyUpStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001B 
+ //Mode0 KeyDnStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001C 
+ //Mode0 KeyUpStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001D 
+ //Mode0 KeyDnStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001E 
+ //Mode0 KeyUpStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 001F 
+ //Mode0 KeyDnStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 0020 
+ //Mode0 KeyUpStyle16to1 bit=1(MacroKey)
+HID_EE_Write16 0021 FFFF //Profile0 Wheel UpDn Style
+HID_EE_Write16 0022 FFFF //Profile1 Wheel UpDn Style
+HID_EE_Write16 0023 FFFF //Profile2 Wheel UpDn Style
+HID_EE_Write16 0024 FFFF //Profile3 Wheel UpDn Style
+HID_EE_Write16 0025 FFFF //Profile4 Wheel UpDn Style
+HID_EE_Write16 0026 
+ //Profile0 WheelX Down Event Code
+HID_EE_Write16 0027 
+ //Profile0 WheelX Up Event Code
+HID_EE_Write16 0028 
+ //Profile1 WheelX Down Event Code
+HID_EE_Write16 0029 
+ //Profile1 WheelX Up Event Code
+HID_EE_Write16 002A 
+ //Profile2 WheelX Down Event Code
+HID_EE_Write16 002B 
+ //Profile2 WheelX Up Event Code
+HID_EE_Write16 002C 
+ //Profile3 WheelX Down Event Code
+HID_EE_Write16 002D 
+ //Profile3 WheelX Up Event Code
+HID_EE_Write16 002E 
+ //Profile4 WheelX Down Event Code
+HID_EE_Write16 002F 
+ //Profile4 WheelX Up Event Code
+HID_EE_Write16 0030 
+ //Profile0 WheelY Down Event Code
+HID_EE_Write16 0031 
+ //Profile0 WheelY Up Event Code
+HID_EE_Write16 0032 
+ //Profile1 WheelY Down Event Code
+HID_EE_Write16 0033 
+ //Profile1 WheelY Up Event Code
+HID_EE_Write16 0034 
+ //Profile2 WheelY Down Event Code
+HID_EE_Write16 0035 
+ //Profile2 WheelY Up Event Code
+HID_EE_Write16 0036 
+ //Profile3 WheelY Down Event Code
+HID_EE_Write16 0037 
+ //Profile3 WheelY Up Event Code
+HID_EE_Write16 0038 
+ //Profile4 WheelY Down Event Code
+HID_EE_Write16 0039 
+ //Profile4 WheelY Up Event Code
+HID_EE_Write16 003A FFFF //Unused
+HID_EE_Write16 003B FFFF //Unused
+HID_EE_Write16 003C FFFF //Unused
+HID_EE_Write16 003D FFFF //Unused
+HID_EE_Write16 003E FFFF //Unused
+HID_EE_Write16 003F FFFF //Unused
+HID_EE_Write16 0040 
+ //DPI EndingIndex(Valid Section-1)
+HID_EE_Write16 0041 
+ //DPI0 
+HID_EE_Write16 0042 
+ //DPI1 
+HID_EE_Write16 0043 
+ //DPI2 
+HID_EE_Write16 0044 
+ //DPI3 
+HID_EE_Write16 0045 
+ //DPI4 
+HID_EE_Write16 0046 
+ //DPI5 
+HID_EE_Write16 0047 
+ //LED0 
+HID_EE_Write16 0048 
+ //LED1 
+HID_EE_Write16 0049 
+ //LED2 
+HID_EE_Write16 004A 
+ //LED3 
+HID_EE_Write16 004B 
+ //LED4 
+HID_EE_Write16 004C 
+ //LED5 
+HID_EE_Write16 004D FFFF //Unused
+HID_EE_Write16 004E FFFF //Unused
+HID_EE_Write16 004F FFFF //Unused
+HID_EE_Write16 
+HID_EE_Write16 
+ 2BFA
+HID_EE_Write16 
+ 2BFE
+ //mode=
+ Button
+Down
+ //mode=
+ Button
+Temp\FinalMemory.txt
