@@ -1,3 +1,4 @@
+#!/bin/env python
 import sys,re
 
 datare = re.compile(' b504 ([0-9a-f]{2})[0-9a-f]{2} ', flags=re.MULTILINE)
